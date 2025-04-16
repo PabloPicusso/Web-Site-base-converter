@@ -1,0 +1,58 @@
+<!-- 
+    Project: Base Converter
+    Author: Daniel Goldstein
+    T.Z - 333877348
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Name: My Base Numbers Converter -->
+</head>
+<body>
+    <div class="container">
+        <h1>Base Converter</h1>
+        <p>Convert numbers between different bases (Binary, Decimal, Hex, Octal)</p>
+        <div class="conversion-box">
+            <div class="section">
+                <h2>FROM:</h2>
+                <div class="buttons">
+                    <button class="from-btn" id="from-binary">Binary (base 2)</button>
+                    <button class="from-btn" id="from-octal">Octal (base 8)</button>
+                    <button class="from-btn active" id="from-decimal">Decimal (base 10)</button>
+                    <button class="from-btn" id="from-hex">Hexadecimal (base 16)</button>
+                </div>
+            </div>
+
+            <!-- Input Field -->
+            <div class="section">
+                <label for="number-input">Enter a number:</label>
+                <input type="text" id="number-input">
+            </div>
+            
+            <!-- Target Base Selection -->
+            <div class="section">
+                <h2>TO:</h2>
+                <div class="buttons">
+                    <button class="to-btn" id="to-binary">Binary (base 2)</button>
+                    <button class="to-btn" id="to-octal">Octal (base 8)</button>
+                    <button class="to-btn" id="to-decimal">Decimal (base 10)</button>
+                    <button class="to-btn active" id="to-hex">Hexadecimal (base 16)</button>
+                </div>
+            </div>          
+            <!-- Result -->
+            <div class="section">
+                <div id="result">Result: </div>
+            </div>
+            
+            <!-- Convert Button -->
+            <button id="convert-btn">Convert</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
